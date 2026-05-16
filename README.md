@@ -1,93 +1,54 @@
 # 🧮 BMI Calculator
 
-A simple and beginner-friendly Python BMI Calculator that supports multiple weight and height units!
+A simple Python BMI (Body Mass Index) calculator with:
 
-This project calculates your **Body Mass Index (BMI)** and tells you which BMI category you fall into.
-
----
-
-# ✨ Features
-
-✅ BMI calculation  
-✅ Multiple weight units  
-✅ Multiple height units  
-✅ Input validation  
-✅ Automatic unit conversion  
-✅ BMI category results  
-✅ Beginner-friendly command-line interface
+* ✅ Multiple unit support
+* 🎨 Colored terminal output using Colorama
+* ⚠️ Input validation
+* 🌍 WHO BMI classification guidelines
 
 ---
 
-# ⚖️ Supported Weight Units
+## ✨ Features
 
-| Unit | Input |
-|---|---|
-| Kilograms | `k` |
-| Pounds | `p` |
-| Grams | `g` |
+* Supports different weight units:
+
+  * Grams (`g`)
+  * Pounds (`p`)
+  * Kilograms (`k`)
+
+* Supports different height units:
+
+  * Inches (`i`)
+  * Feet (`f`)
+  * Meters (`m`)
+  * Centimeters (`cm`)
+
+* Automatically converts everything into:
+
+  * kilograms (kg)
+  * meters (m)
+
+* Displays BMI category with colored text:
+
+  * 🟡 Underweight
+  * 🟢 Normal
+  * 🟡 Overweight
+  * 🔴 Obese
 
 ---
 
-# 📏 Supported Height Units
+## 📦 Requirements
 
-| Unit | Input |
-|---|---|
-| Meters | `m` |
-| Feet | `f` |
-| Inches | `i` |
-| Centimeters | `cm` |
+Install dependencies before running:
 
----
-
-# 🧠 BMI Formula
-
-The program calculates BMI using:
-
-:contentReference[oaicite:0]{index=0}
-
----
-
-# 💻 Example Usage
-
-```txt
-Welcome to the BMI calculator!
-
-What is your weight(number)
-> 70
-
-What metric measure?(grams[g], pound[p], kilogram[k]
-> k
-
-What is your height(number)
-> 175
-
-What metric measure?(inch[i], foot[f], meter[m], centimeter[cm]
-> cm
-
-Your BMI is 22.85.
-You are at risk of being underweight
+```bash
+pip install colorama
 ```
 
 ---
 
-# 🏷️ BMI Categories
-
-| BMI | Result |
-|---|---|
-| Below 18.5 | Underweight |
-| 18.5 - 24.9 | At risk of being underweight |
-| 25 - 29.9 | Normal |
-| 30 - 34.9 | Overweight |
-| 35+ | Obese |
-
----
-
-# ▶️ Running the Program
-
-## Requirements
-- Python 3
-
-## Run
+## ▶️ Running the Program
 
 ```bash
 python BMICalculator.py
@@ -95,30 +56,64 @@ python BMICalculator.py
 
 ---
 
-# 📌 Notes
+## 🖥️ Example
 
-⚠️ This project uses a simplified BMI classification system.
+```text
+Welcome to the BMI calculator!
 
-📚 Built as a beginner Python project focused on:
-- user input
-- functions
-- unit conversion
-- conditionals
-- validation
+What is your weight(number)
+> 150
+
+What metric measure?(grams[g], pound[p], kilogram[k]
+> p
+
+You are 68.03 kg.
+
+What is your height(number)
+> 175
+
+What metric measure?(inch[i], foot[f], meter[m], centimeter[cm]
+> cm
+
+You are 1.75 m.
+
+With a BMI of 22.21. You are normal based on WHO guidelines.
+```
 
 ---
 
-# 🚀 Possible Future Improvements
+## 📚 BMI Categories Used
 
-- 🎨 GUI version
-- 🔁 Repeat calculations automatically
-- 📊 BMI charts/visualization
-- 🧾 Better formatting and rounding
-- ❤️ Improved health classifications
-- 💾 Save BMI history
+Based on simplified WHO guidelines:
+
+| BMI         | Category    |
+| ----------- | ----------- |
+| Below 18.5  | Underweight |
+| 18.5 - 24.9 | Normal      |
+| 25 - 29.9   | Overweight  |
+| 30+         | Obese       |
+
+> ⚠️ This is only a rough estimate and does not account for age, muscle mass, or medical conditions.
 
 ---
 
-# ✅ Status
+## 🛠️ Built With
 
-🟢 Completed personal project
+* 🐍 Python
+* 🎨 Colorama
+
+---
+
+## 🚧 Future Ideas
+
+* [ ] Add GUI version
+* [ ] Add age support
+* [ ] Add imperial BMI output
+* [ ] Save BMI history
+* [ ] Health recommendations
+
+---
+
+## 📄 License
+
+Free to use and modify for learning purposes.
