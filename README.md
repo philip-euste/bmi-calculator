@@ -51,7 +51,7 @@ pip install colorama
 ## ▶️ Running the Program
 
 ```bash
-python BMICalculator.py
+python bmi_calculator.py
 ```
 
 ---
