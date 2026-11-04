@@ -33,7 +33,7 @@ def weight_string_func(weight: float) -> float:
         return weight_result
 
 def weight_result_func(weight: float, multiplied: float = 1.0, divided: float = 1.0) -> float:
-    print(f"You are {(weight * multiplied / divided):.2f} kg.")
+    print(f"\nYou are {(weight * multiplied / divided):.2f} kg.")
     return weight * multiplied/divided
 
 # ! HEIGHT FUNCTIONS
@@ -55,7 +55,7 @@ def height_string_func(height: float) -> float:
         return height_result
 
 def height_result_func(height: float, divided = 1.0):
-    print(f"You are {height / divided:.2f} m.")
+    print(f"\nYou are {height / divided:.2f} m.")
     return height / divided
 
 # ! BMI FUNCTIONS
