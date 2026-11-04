@@ -8,7 +8,7 @@ def invalid_print(string: str, error_color: str = FLR) -> None:
 def weight_height_func(type: str) -> float:
     while True:
         try:
-            weight_height = float(input(f"What is your {type}(number)\n> "))
+            weight_height = float(input(f"\nWhat is your {type}(number)\n> "))
             if weight_height <= 0:
                 invalid_print(f"{type.title()} can not be less than or equal to 0.")
                 continue
@@ -20,7 +20,7 @@ def weight_height_func(type: str) -> float:
 
 def weight_string_func(weight: float) -> float:
     while True:
-        weight_choice = input("What metric measure?(grams[g], pound[p], kilogram[k]\n> ").strip().lower()
+        weight_choice = input("\nWhat metric measure?(grams[g], pound[p], kilogram[k]\n> ").strip().lower()
         if weight_choice == "p":
             weight_result = weight_result_func(weight, divided = 2.205)
         elif weight_choice == "k":
@@ -40,7 +40,7 @@ def weight_result_func(weight: float, multiplied: float = 1.0, divided: float = 
 
 def height_string_func(height: float) -> float:
     while True:
-        height_choice = input("What metric measure?(inch[i], foot[f], meter[m], centimeter[cm]\n> ").strip().lower()
+        height_choice = input("\nWhat metric measure?(inch[i], foot[f], meter[m], centimeter[cm]\n> ").strip().lower()
         if height_choice == "i":
             height_result = height_result_func(height, 39.37)
         elif height_choice == "m":
