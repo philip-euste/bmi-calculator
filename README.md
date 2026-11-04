@@ -172,7 +172,7 @@ The project separates its responsibilities into three Python files:
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/bmi-calculator.git
+git clone https://github.com/philip-euste/bmi-calculator.git
 
 cd bmi-calculator
 ```
