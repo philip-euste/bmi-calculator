@@ -6,6 +6,11 @@ A simple Python BMI (Body Mass Index) calculator with:
 * 🎨 Colored terminal output using Colorama
 * ⚠️ Input validation
 * 🌍 WHO BMI classification guidelines
+---
+
+## Version
+
+****v3.0.0****
 
 ---
 
