@@ -71,4 +71,4 @@ def bmi_result_func(weight: float, height: float) -> str:
     else:
         phrase = f"{FLR}obese"
 
-    return f"With a BMI of {BMI:.2f}, you are classified as {phrase}{FF} based on the WHO adult BMI classification"
+    return f"\nWith a BMI of {BMI:.2f}, you are classified as {phrase}{FF} based on the WHO adult BMI classification"
